@@ -12,5 +12,5 @@
          }
       }
       
-     rawFile.send(null);   readTextFile(“file:///../../../../../../../../../etc/passwd”);
+     rawFile.send(null);   readTextFile(“file:///”);
    </script>
